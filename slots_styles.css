@@ -1,0 +1,219 @@
+@font-face { font-family: MomcakeBold; src: url('fonts/MomcakeBold.otf'); } 
+@font-face { font-family: MomcakeThin; src: url('fonts/MomcakeThin.otf'); } 
+@font-face { font-family: FuturaPtBook; src: url('fonts/futura-pt-book.otf'); } 
+html, body{
+    margin: 0%;
+    /*background-color: black;*/
+    background-color: black;
+    /background-image: url("resources/pattern.png");
+    background-size: 100px 100px;
+    
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #111;
+    box-shadow: inset 0 0 6px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #333;   
+    border-radius: 10px;
+}
+#background{
+    
+}
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+.navlink_logo {
+    float: left;
+    padding: 7px;
+}
+.navlink {
+    color: white;
+    float: left;
+    color: black;
+}
+#navsafety{
+    color: white;
+    float: right;
+    color: black; 
+}
+#music{
+    background-color: white;
+    float: right;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: 
+}
+#audio{
+    padding-top: 5px;
+    height: 50px;
+    width: 50px;
+}
+.navlink a {
+    font-family: MomcakeThin;
+    font-size: 20;
+    color: white;
+    display: block;
+    /*color: white;*/
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+}
+#navsafety a{
+    font-family: MomcakeThin;
+    font-size: 20;
+    color: white;
+    display: block;
+    /*color: white;*/
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+}
+.navlink a:hover:not(.active) {
+    background-color: #111;
+}
+#navsafety a:hover:not(.active) {
+    background-color: #111;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+}
+#red_carpet{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    //background-color: red;
+    z-index: 2;
+}
+#slot_machine{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+#slots{
+    border: 14px;
+    border-style: outset;
+    border-top-color: #fad665;
+    border-bottom-color: #d98428;
+    border-left-color: #fad665;
+    border-right-color: #d98428;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    height: 350px;
+    margin: 50 auto;
+    background-color: black;
+    z-index: 2;
+}
+.slots{
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    z-index: 2;
+}
+#buttons{ 
+    background-color: black;
+    //border: 14px;
+    //border-style: outset;
+    //border-top-color: #fad665;
+    //border-bottom-color: #d98428;
+    //border-left-color: #fad665;
+    //border-right-color: #d98428;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    margin: 0 auto;
+}
+.spinbuttons{
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 0 auto;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-family: MomCakeBold;
+    border: none;
+    border-radius: 15px;
+    z-index: 2;
+}
+#startbutton{
+    margin: 10px;
+    background-color: #4CAF50;
+    box-shadow: 0 9px #347536;
+}
+#startbutton:hover {
+    background-color: #3e8e41;
+}
+#startbutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #214a22;
+    transform: translateY(4px);
+}
+#stopbutton{
+    margin: 10px;
+    background-color: #fc0000;
+    box-shadow: 0 9px #c20202;
+}
+#stopbutton:hover {
+    background-color: #d60202;
+}
+#stopbutton:active {
+    background-color: #c20202;
+    box-shadow: 0 5px #8a0303;
+    transform: translateY(4px);
+}
+#betting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: FuturaPtBook;
+    color: white;
+}
+#balance{
+    font-family: FuturaPtBook;
+    color: white;
+}
+#balancetext{
+    font-family: FuturaPtBook;
+    color: white;
+    padding-left: 5px;
+}
+#betamount{
+    border-radius: 15px;
+    border-style: none;
+    border: 0px;
+    background-color: #333;
+    padding-left: 5px;
+    font-family: FuturaPtBook;
+    font-size: 20px;
+    color: white;
+    height: 40px;
+    width: 80px;
+}
+#bettext{
+    font-family: FuturaPtBook;
+    color: white;
+    padding-left: 10px;
+}

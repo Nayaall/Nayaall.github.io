@@ -1,0 +1,53 @@
+<DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="slots_styles.css">
+<script src="slots_scripts.js"></script>
+<title>CN Home</title>
+<! favicon code>
+<link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
+<link rel="manifest" href="/resources/favicon/site.webmanifest">
+<link rel="mask-icon" href="/resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/resources/favicon/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/resources/favicon/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<nav>
+    <ul id="navbar" class="navbar">
+      <li class="navlink_logo"><a class="active" href="Home.html"><img id="logo" src="resources/Logo.png"></a></li>
+      <li class="navlink"><a href="#games">Games</a></li>
+      <li class="navlink"><a href="About.html">About</a></li>
+      <li class="navlink"><a href="#login">Login</a></li>
+      <li id="music"><img id="audio" onclick="mute()" src="resources/mute.png"><audio  id="home_theme" loop><source src="home_theme.mp3" type="audio/mpeg"></audio></li>
+      <li id="navsafety"><a href="https://www.begambleaware.org/">Safer Gambling</a></li>
+    </ul>
+</nav>
+<div id="red_carpet">
+    <div id="slot_machine">
+        <div id="slots">
+            <img class="slots" id="slot1" src="resources/seven.png">
+            <img class="slots" id="slot2" src="resources/seven.png">
+            <img class="slots" id="slot3" src="resources/seven.png">
+        </div>
+        <div id="buttons">
+            <audio  id="slots_theme" loop>
+                <source src="slots_theme.mp3" type="audio/mpeg">
+            </audio>
+            <audio  id="reward_theme" loop>
+                <source src="reward_theme.mp3" type="audio/mpeg">
+            </audio>
+            <button class="spinbuttons" id="startbutton" onclick="spin(); cost(); slotsmusic();">start</button>
+            <button class="spinbuttons" id="stopbutton" onclick="stop()">stop</button>
+        </div>
+        <div id="betting">
+            <h2 id="balancetext">Balance: £<span id="balance">10000</span>  </h2>
+            <h2 id="bettext"> Betting Amount: £</h2><input type="number" id="betamount" value="1">
+        </div>
+    </div>
+</div>
+</body>
+</html>
