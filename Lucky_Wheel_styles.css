@@ -1,3 +1,5 @@
+Nayaall.github.io/slots_styles.css
+@Nayaall
 @font-face { font-family: MomcakeBold; src: url('fonts/MomcakeBold.otf'); } 
 @font-face { font-family: MomcakeThin; src: url('fonts/MomcakeThin.otf'); } 
 @font-face { font-family: FuturaPtBook; src: url('fonts/futura-pt-book.otf'); } 
@@ -23,7 +25,6 @@ body::-webkit-scrollbar-thumb {
 #background{
     
 }
-
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -32,7 +33,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #333;
     
 }
-
 .navlink_logo {
     float: left;
     padding: 7px;
@@ -70,7 +70,6 @@ body::-webkit-scrollbar-thumb {
     padding: 25px 16px;
     text-decoration: none;
 }
-
 #navsafety a{
     font-family: MomcakeThin;
     font-size: 20;
@@ -81,11 +80,9 @@ body::-webkit-scrollbar-thumb {
     padding: 25px 20px;
     text-decoration: none;
 }
-
 .navlink a:hover:not(.active) {
     background-color: #111;
 }
-
 #navsafety a:hover:not(.active) {
     background-color: #111;
 }
@@ -93,18 +90,132 @@ body::-webkit-scrollbar-thumb {
     height: 50px;
     width: 50px;
 }
-
-.h2{
-    color: white;
-    text-decoration: none;
-    font-family: FuturaPtBook;
-    font-size: 40px;
-    padding-left: 50px;
+#red_carpet{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    //background-color: red;
+    z-index: 2;
 }
-.p{
-    color: white;
+#slot_machine{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+#slots{
+    border: 14px;
+    border-style: outset;
+    border-top-color: #fad665;
+    border-bottom-color: #d98428;
+    border-left-color: #fad665;
+    border-right-color: #d98428;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    height: 350px;
+    margin: 50 auto;
+    background-color: black;
+    z-index: 2;
+}
+.slots{
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    z-index: 2;
+}
+#buttons{ 
+    background-color: black;
+    //border: 14px;
+    //border-style: outset;
+    //border-top-color: #fad665;
+    //border-bottom-color: #d98428;
+    //border-left-color: #fad665;
+    //border-right-color: #d98428;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    margin: 0 auto;
+}
+.spinbuttons{
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 0 auto;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
     text-decoration: none;
+    outline: none;
+    color: #fff;
+    font-family: MomCakeBold;
+    border: none;
+    border-radius: 15px;
+    z-index: 2;
+}
+#startbutton{
+    margin: 10px;
+    background-color: #4CAF50;
+    box-shadow: 0 9px #347536;
+}
+#startbutton:hover {
+    background-color: #3e8e41;
+}
+#startbutton:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #214a22;
+    transform: translateY(4px);
+}
+#stopbutton{
+    margin: 10px;
+    background-color: #fc0000;
+    box-shadow: 0 9px #c20202;
+}
+#stopbutton:hover {
+    background-color: #d60202;
+}
+#stopbutton:active {
+    background-color: #c20202;
+    box-shadow: 0 5px #8a0303;
+    transform: translateY(4px);
+}
+#betting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-family: FuturaPtBook;
+    color: white;
+}
+#balance{
+    font-family: FuturaPtBook;
+    color: white;
+}
+#balancetext{
+    font-family: FuturaPtBook;
+    color: white;
+    padding-left: 5px;
+}
+#betamount{
+    border-radius: 15px;
+    border-style: none;
+    border: 0px;
+    background-color: #333;
+    padding-left: 5px;
     font-family: FuturaPtBook;
     font-size: 20px;
-    padding-left: 50px;
+    color: white;
+    height: 40px;
+    width: 80px;
+}
+#bettext{
+    font-family: FuturaPtBook;
+    color: white;
+    padding-left: 10px;
 }
