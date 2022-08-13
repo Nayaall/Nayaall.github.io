@@ -1,12 +1,10 @@
-Nayaall.github.io/slots_styles.css
-@Nayaall
 @font-face { font-family: MomcakeBold; src: url('fonts/MomcakeBold.otf'); } 
 @font-face { font-family: MomcakeThin; src: url('fonts/MomcakeThin.otf'); } 
 @font-face { font-family: FuturaPtBook; src: url('fonts/futura-pt-book.otf'); } 
 html, body{
     margin: 0%;
     /*background-color: black;*/
-    background-color: black;
+    background-color: rgba(34,34,34,255);
     /background-image: url("resources/pattern.png");
     background-size: 100px 100px;
     
@@ -22,25 +20,28 @@ body::-webkit-scrollbar-thumb {
     background: #333;   
     border-radius: 10px;
 }
-#background{
-    
-}
 .navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #333;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    z-index: 100;
 }
+
 .navlink_logo {
     float: left;
+    display: block;
     padding: 7px;
 }
 .navlink {
+    float: left;
+    display: block;
     color: white;
     float: left;
-    color: black;
 }
 #navsafety{
     color: white;
@@ -70,6 +71,7 @@ body::-webkit-scrollbar-thumb {
     padding: 25px 16px;
     text-decoration: none;
 }
+
 #navsafety a{
     font-family: MomcakeThin;
     font-size: 20;
@@ -80,74 +82,95 @@ body::-webkit-scrollbar-thumb {
     padding: 25px 20px;
     text-decoration: none;
 }
+
 .navlink a:hover:not(.active) {
     background-color: #111;
 }
+
 #navsafety a:hover:not(.active) {
     background-color: #111;
 }
 #logo{
-    height: 50px;
-    width: 50px;
+    height: 35;
+    padding-top: 10px;
 }
-#red_carpet{
-    display: flex;
-    justify-content: center;
-    width: 50%;
+
+.h2{
+    color: white;
+    text-decoration: none;
+    font-family: FuturaPtBook;
+    font-size: 40px;
+    padding-left: 50px;
+}
+.p{
+    color: white;
+    text-decoration: none;
+    font-family: FuturaPtBook;
+    font-size: 20px;
+    padding-left: 50px;
+}
+#purple_background{
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    padding: 10px;
+    margin: 69 auto;
+    background-image: linear-gradient(0deg,#4d0b78, #1f0930);
+    border-style: solid;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    /*border-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);*/
+    border-image: 
+    linear-gradient(180deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07) 1 100%;
     height: 100%;
-    margin: 0 auto;
-    //background-color: red;
+    width: 50%;
+}
+#balancetext{
+    text-align:center;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    font-family: FuturaPtBook;
+    font-size: 160%;
+    background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07); 
+    color: transparent;
+    -webkit-background-clip:text;
+    z-index: 4;
+}
+#lucky_wheel {
+    margin:  auto;
+}
+#lucky_wheel_backplate {
+    position:  absolute;
+    width: 75%;
+    left: 12.5%;
+    right: 12.5%;
+    /*pointer-events: none;*/
+    z-index: 1;
+    animation: ;
+}
+#lucky_wheel_border {
+    position: absolute;
+    width: 75%;
+    left: 12.5%;
+    right: 12.5%;
+    /*pointer-events: none;*/
     z-index: 2;
-}
-#slot_machine{
-    display: block;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 50%;
-    margin: 0 auto;
-}
-#slots{
-    border: 14px;
-    border-style: outset;
-    border-top-color: #fad665;
-    border-bottom-color: #d98428;
-    border-left-color: #fad665;
-    border-right-color: #d98428;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 80%;
-    height: 350px;
-    margin: 50 auto;
-    background-color: black;
-    z-index: 2;
-}
-.slots{
-    height: 250px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 0px;
-    z-index: 2;
-}
+} 
 #buttons{ 
-    background-color: black;
-    //border: 14px;
-    //border-style: outset;
-    //border-top-color: #fad665;
-    //border-bottom-color: #d98428;
-    //border-left-color: #fad665;
-    //border-right-color: #d98428;
     display: flex;
     justify-content: center;
     align-content: center;
     width: 20%;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 73.25%;
+    margin-bottom: 0%;
 }
 .spinbuttons{
     display: inline-block;
     padding: 15px 25px;
-    margin: 0 auto;
     font-size: 24px;
     cursor: pointer;
     text-align: center;
@@ -157,65 +180,56 @@ body::-webkit-scrollbar-thumb {
     font-family: MomCakeBold;
     border: none;
     border-radius: 15px;
-    z-index: 2;
 }
-#startbutton{
-    margin: 10px;
-    background-color: #4CAF50;
-    box-shadow: 0 9px #347536;
+.golden-btn + .golden-btn { margin-top: 1em; }
+
+.golden-btn {
+  display: inline-block;
+  outline: none;
+  font-family: inherit;
+  font-size: 1em;
+  box-sizing: border-box;
+  border: none;
+  border-radius: .3em;
+  height: 2.75em;
+  line-height: 2.5em;
+  text-transform: uppercase;
+  padding: 0 2em;
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+              inset 0 -2px 5px 1px rgba(139,66,8,1),
+              inset 0 -1px 1px 3px rgba(250,227,133,1);
+  background-image: linear-gradient(160deg, #a54e07, #b47e11, #fef1a2, #bc881b, #a54e07);
+  border: 1px solid #a55d07;
+  color: rgb(120,50,5);
+  text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background-size: 100% 100%;
+  background-position:center;
+  z-index: 3;
 }
-#startbutton:hover {
-    background-color: #3e8e41;
+/*.golden-btn:focus,*/
+.golden-btn:hover {
+  background-size: 150% 150%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23),
+                inset 0 -2px 5px 1px #b17d10,
+                inset 0 -1px 1px 3px rgba(250,227,133,1);
+  border: 1px solid rgba(165,93,7,.6);
+  color: rgba(120,50,5,.8);
 }
-#startbutton:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #214a22;
-    transform: translateY(4px);
+.golden-btn:active {
+  box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(110,80,20,.4),
+              inset 0 -2px 5px 1px #b17d10,
+                inset 0 -1px 1px 3px rgba(250,227,133,1);
 }
-#stopbutton{
-    margin: 10px;
-    background-color: #fc0000;
-    box-shadow: 0 9px #c20202;
+#spindeg{
+    visibility: hidden;
 }
-#stopbutton:hover {
-    background-color: #d60202;
-}
-#stopbutton:active {
-    background-color: #c20202;
-    box-shadow: 0 5px #8a0303;
-    transform: translateY(4px);
-}
-#betting{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    font-family: FuturaPtBook;
-    color: white;
-}
-#balance{
-    font-family: FuturaPtBook;
-    color: white;
-}
-#balancetext{
-    font-family: FuturaPtBook;
-    color: white;
-    padding-left: 5px;
-}
-#betamount{
-    border-radius: 15px;
-    border-style: none;
-    border: 0px;
-    background-color: #333;
-    padding-left: 5px;
-    font-family: FuturaPtBook;
-    font-size: 20px;
-    color: white;
-    height: 40px;
-    width: 80px;
-}
-#bettext{
-    font-family: FuturaPtBook;
-    color: white;
-    padding-left: 10px;
+@keyframes spin {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(1440deg);
+    }
 }

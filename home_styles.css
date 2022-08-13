@@ -1,145 +1,126 @@
-@font-face { font-family: MomcakeBold; src: url('fonts/MomcakeBold.otf'); } 
-@font-face { font-family: MomcakeThin; src: url('fonts/MomcakeThin.otf'); } 
-@font-face { font-family: FuturaPtBook; src: url('fonts/futura-pt-book.otf'); } 
-html, body{
-    margin: 0%;
-    /*background-color: black;*/
-    background-color: black;
-    /background-image: url("resources/pattern.png");
-    background-size: 100px 100px;
-    
-}
-body::-webkit-scrollbar {
-    width: 10px;
-}
-body::-webkit-scrollbar-track {
-    background: #111;
-    box-shadow: inset 0 0 6px;
-}
-body::-webkit-scrollbar-thumb {
-    background: #333;   
-    border-radius: 10px;
-}
-#background{
-    
+
+/* || SLIDESHOW (Taken from w3schools and altered)*/
+.mySlides {display: none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 58.5%;
+  position: relative;
+  margin: auto;
+  margin-top: 90px;
+  z-index: 1;
 }
 
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.navlink_logo {
-    float: left;
-    padding: 7px;
-}
-.navlink {
-    color: white;
-    float: left;
-    color: black;
-}
-#navsafety{
-    color: white;
-    float: right;
-    color: black; 
-}
-#music{
-    background-color: white;
-    float: right;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    display: 
-}
-#audio{
-    padding-top: 5px;
-    height: 50px;
-    width: 50px;
-}
-.navlink a {
-    font-family: MomcakeThin;
-    font-size: 20;
-    color: white;
-    display: block;
-    /*color: white;*/
-    text-align: center;
-    padding: 25px 16px;
-    text-decoration: none;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-#navsafety a{
-    font-family: MomcakeThin;
-    font-size: 20;
-    color: white;
-    display: block;
-    /*color: white;*/
-    text-align: center;
-    padding: 25px 20px;
-    text-decoration: none;
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #333;
 }
 
-.navlink a:hover:not(.active) {
-    background-color: #111;
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
 }
 
-#navsafety a:hover:not(.active) {
-    background-color: #111;
-}
-#logo{
-    height: 50px;
-    width: 50px;
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.h2{
-    color: white;
-    text-decoration: none;
-    font-family: FuturaPtBook;
-    font-size: 40px;
-    padding-left: 50px;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #2db1e3;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-.p{
-    color: white;
-    text-decoration: none;
-    font-family: FuturaPtBook;
-    font-size: 20px;
-    padding-left: 50px;
+
+.active, .dot:hover {
+  background-color: #cc25c6;
 }
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* || GAMES GRID */
 #games_grid{
-    background-color: black;
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-bottom: 10px;
-    align-content: center;
-    width: 50%;
-    margin: 50 auto;
-    margin-bottom: 0;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
+    height: 26%;
+    background-color: rgba(34,34,34,255);
+    width: 60%;
+    margin: 75 auto;
+}
+.grid_borders{
+  --angle: 0deg;
+  display: inline-block;
+  overflow: hidden;
+  width: 31%;
+  padding: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+  background: linear-gradient(var(--angle), #2db1e3, #2db1e3, #2db1e3, #cc25c6, #cc25c6, #cc25c6);
+  border-radius: 53px;
+  border-collapse: separate; 
+  animation: 20s borderspin linear infinite;  
 }
 .grid_images{
-    height: 400px;
-    width: 30%;
-    padding-left:; 10px;
-    padding-right: 10px;
+  display: inline-block;
+  height: 70%;
+  width: 100%;
+  margin: auto;
+  border-radius: 50px;
+  border-collapse: separate; 
 }
-#grid_labels{
-    display: flex;
-    justify-content: center;
-    align-items: space-between;
-}
-.grid_labels_a{
-    color: white;
-    text-decoration: none;
-    font-family: FuturaPtBook;
-    font-size: 40px;
-    padding-top: 0;
-    padding-left: 140px;
-    padding-right: 90px;
-    
-}
+/* || FOOTER */
 footer{
     background-color: #333;
     height: 150px;
@@ -154,4 +135,14 @@ footer{
     color: white;
     font-family: FuturaPtBook;
     font-size: 15px;
+}
+@keyframes borderspin {
+  to {
+    --angle: 360deg;
+  }
+}
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }

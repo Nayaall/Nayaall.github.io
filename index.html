@@ -1,24 +1,16 @@
 <DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="resources/favicon_fullsize.ico" type=”image/x-icon”>
 <link rel="stylesheet" href="home_styles.css">
+<link rel="stylesheet" href="general_styles.css">
 <script src="home_scripts.js"></script>
-<title>CN Home</title>
-<! favicon code>
-<link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon/favicon-16x16.png">
-<link rel="manifest" href="/resources/favicon/site.webmanifest">
-<link rel="mask-icon" href="/resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
-<link rel="shortcut icon" href="/resources/favicon/favicon.ico">
-<meta name="msapplication-TileColor" content="#da532c">
-<meta name="msapplication-config" content="/resources/favicon/browserconfig.xml">
-<meta name="theme-color" content="#ffffff">
+<title>NC Home</title>
 </head>
 <body>
 <nav>
-    <ul id="navbar" class="navbar">
-      <li class="navlink_logo"><a class="active" href="Nayaall.github.io"><img id="logo" src="resources/Logo.png"></a></li>
+    <ul id="navbar" class="navbar" onmouseover = "greybg(this)" onmouseout = "blackbg(this)">
+      <li class="navlink_logo"><a href="Nayaall.github.io"><img id="logo" src="resources/ncasino2.png"></a></li>
       <li class="navlink"><a href="#games">Games</a></li>
       <li class="navlink"><a href="About.html">About</a></li>
       <li class="navlink"><a href="#login">Login</a></li>
@@ -27,17 +19,51 @@
       <li id="navsafety"><a href="Payments.html">Payment Plans</a></li>
     </ul>
 </nav>
-<div id="background"></div>
-<div id="pattern"></div>
-<div id="games_grid">
-    <a href="Slots.html"><img class="grid_images" src="resources/slot-machine.png"></a>
-    <a href="Lucky_Wheel.html"><img class="grid_images" src="resources/lucky-wheel.png"></a>
-    <a href="Roulette.html"><img class="grid_images" src="resources/roulette.png"></a>
+<!--slideshow (Taken from w3schools and altered)-->
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext" style="visibility: hidden">1 / 3</div>
+  <a href="Roulette.html" ><img src="resources/roulette_wheel_promotional.png" onload="showSlides(slideIndex)" style="width:100%"></a>
+  <div class="text" style="visibility: hidden">Roulette</div>
 </div>
-<div id="grid_labels">
-    <a class="grid_labels_a" href="Slots.html">Slots</a>
-    <a class="grid_labels_a" href="Lucky_Wheel.html">Lucky Wheel</a>
-    <a class="grid_labels_a" href="Roulette.html">Roulette</a>
+
+<div class="mySlides fade">
+  <div class="numbertext" style="visibility: hidden">2 / 3</div>
+  <a href="Lucky_Wheel.html"><img src="resources/gold_wheel_promotional.png" style="width:100%"></a>
+  <div class="text" style="visibility: hidden">Lucky Wheel</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext" style="visibility: hidden">3 / 3</div>
+  <a href="Slots.html"><img src="resources/slots_promotional.png" style="width:100%"></a>
+  <div class="text" style="visibility: hidden">Slots</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<!--games grid -->
+<div id="games_grid">
+    <div class="grid_borders">
+        <a href="Slots.html"><img class="grid_images" id="slots_grid_image" onmouseover = "gridzoom(this)" onmouseout = "gridzoomout(this)" src="resources/slots_promotional.png"></a>
+    </div>
+    <div class="grid_borders">
+        <a href="Lucky_Wheel.html"><img class="grid_images" id="wheel_grid_image" onmouseover = "gridzoom(this)" onmouseout = "gridzoomout(this)" src="resources/gold_wheel_promotional.png"></a>
+    </div>
+    <div class="grid_borders">
+        <a href="Roulette.html"><img class="grid_images" id="roulette_grid_image" onmouseover = "gridzoom(this)" onmouseout = "gridzoomout(this)" src="resources/roulette_wheel_promotional.png"></a>
+    </div>
 </div>
 <footer>
 <h2 class="footerh2">Why play with us?</h2>

@@ -1,23 +1,8 @@
-<!DOCTYPE html>
 <html>
 <head>
-<script>
-function mute(){
-    var audio = document.getElementById('audio').src;
-    var home_theme = document.getElementById('home_theme')
-    if (audio.indexOf('resources/mute.png')!=-1) {
-            home_theme.play()
-            document.getElementById('audio').src  = 'resources/volume.png';
-        }
-    else {
-           home_theme.pause()
-           document.getElementById('audio').src = 'resources/mute.png';
-       }
-}
-</script>
+<link rel="shortcut icon" href="resources/favicon_fullsize.ico">    
 </head>
 <body>
-<img src="resources/mute.png" onclick="mute()" id="audio">
-<audio id="home_theme" loop><source src="home_theme.mp3" type="audio/mpeg"></audio>
+<p>hi</p>
 </body>
 </html>

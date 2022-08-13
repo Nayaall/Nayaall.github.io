@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="Lucky_Wheel_styles.css">
-<script src="home_scripts.js"></script>
+<script src="Lucky_Wheel_scripts.js"></script>
 <title>CN Home</title>
 <! favicon code>
 <link rel="apple-touch-icon" sizes="76x76" href="/resources/favicon/apple-touch-icon.png">
@@ -17,18 +17,29 @@
 </head>
 <body>
 <nav>
-    <ul id="navbar" class="navbar">
-      <li class="navlink_logo"><a class="active" href="Home.html"><img id="logo" src="resources/Logo.png"></a></li>
+    <ul id="navbar" class="navbar" onmouseover = "greybg(this)" onmouseout = "blackbg(this)">
+      <li class="navlink_logo"><a class="active" href="Nayaall.github.io"><img id="logo" src="resources/ncasino2.png"></a></li>
       <li class="navlink"><a href="#games">Games</a></li>
       <li class="navlink"><a href="About.html">About</a></li>
       <li class="navlink"><a href="#login">Login</a></li>
       <li id="music"><img id="audio" onclick="mute()" src="resources/mute.png"><audio  id="home_theme" loop><source src="home_theme.mp3" type="audio/mpeg"></audio></li>
       <li id="navsafety"><a href="https://www.begambleaware.org/">Safer Gambling</a></li>
+      <li id="navsafety"><a href="Payments.html">Payment Plans</a></li>
     </ul>
 </nav>
-<img id="lucky_wheel_img" src="lucky_wheel.png">
-<div class="spinbuttons">
-    <button id="startbutton" onclick="spin()">spin!</button>
+<div id="purple_background">
+    <audio  id="luckywheelding">
+        <source src="Lucky_Wheel_Ding.mp3" type="audio/mpeg">
+    </audio>
+    <div id="lucky_wheel">
+        <img id="lucky_wheel_backplate" src="resources/Lucky_Wheel_backplate.png">
+        <img id="lucky_wheel_border" src="resources/Lucky_Wheel_border.png">
+    </div>
+    <div class="spinbuttons" id="buttons">
+        <button id="startbutton" class="golden-btn" onclick="spin()">SPIN</button>
+    </div>
+    <h2 id="balancetext">Cost: £30  Balance: £<span id="balance">10000</span>  </h2>
+    <p id="spindeg">spindeg</p>
 </div>
 </body>
 </html>

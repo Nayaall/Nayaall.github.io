@@ -1,3 +1,9 @@
+function blackbg(x) {
+    x.style.backgroundColor='rgba(34,34,34,255)';
+}
+function greybg(x) {
+    x.style.backgroundColor='#333';
+}
 function sleep(milliseconds) {
   const date = Date.now();
   let currentDate = null;
@@ -5,21 +11,18 @@ function sleep(milliseconds) {
     currentDate = Date.now();
   } while (currentDate - date < milliseconds);
 }
-function mute(){
-    var audio = document.getElementById('audio').src;
-    var home_theme = document.getElementById('home_theme');
-    if (audio.indexOf('resources/mute.png')!=-1) {
-            home_theme.play()
-            document.getElementById('audio').src  = 'resources/volume.png';
-        }
-    else {
-           home_theme.pause()
-           document.getElementById('audio').src = 'resources/mute.png';
-       }
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("navbar").style.backgroundColor='rgba(34,34,34,0.9)';
+  } else {
+    document.getElementById("navbar").style.backgroundColor='rgba(34,34,34,1)';
+    document.getElementById("navbar").style.backgroundColor='#333';
+  }
 }
 var myVar;
 function slotsmusic() {
-    var audio = document.getElementById('audio').src
+    var audio = document.getElementById('audio').src;
     var home_theme = document.getElementById('home_theme');
     var randnum = Math.floor((Math.random() * 4) + 1);
     if (randnum === 1){
