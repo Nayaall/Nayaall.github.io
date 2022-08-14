@@ -48,13 +48,14 @@ function showSlides(n) {
 }
 /* || GRID */
 function gridzoom(x) {
-    x.style.height='75%';
-    x.style.width="100%";
-    x.style.margin="0";
+    x.parentElement.parentElement.style.width='33%';
+    x.parentElement.parentElement.style.margin='0% auto';
+    x.style.height="100%";
+    console.log("hi");
 }
 function gridzoomout(x) {
-    x.style.height='70%';
-    x.style.width="100%";
+    x.parentElement.parentElement.style.width='31%';
+    x.parentElement.parentElement.style.margin='1% auto';
 }
 
 function mute(){
