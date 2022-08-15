@@ -4,9 +4,11 @@
 html, body{
     margin: 0%;
     background-color: rgba(34,34,34,255);
-    /background-image: url("resources/pattern.png");
     background-size: 100px 100px;
     
+}
+body {
+    height: 100%;
 }
 body::-webkit-scrollbar {
     width: 10px;
@@ -110,18 +112,23 @@ body::-webkit-scrollbar-thumb {
     font-size: 20px;
     padding-left: 50px;
 }
+
 /* || FOOTER */
-footer{
+footer {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    width: 100%;
     background-color: #333;
     height: 150px;
-    margin-top: 100%;
+    margin-top: 150px;
 }
-.footerh2{
+.footerh2 {
     color: white;
     font-family: MomcakeThin;
     font-size: 24px;
 }
-.footerp{
+.footerp {
     color: white;
     font-family: FuturaPtBook;
     font-size: 15px;
@@ -137,4 +144,15 @@ footer{
     height: 30px;
     padding: 10px;
     margin: 20 auto;
+}
+#footer_info {
+    text-align: center;
+}
+#sources_link {
+    color: #2db1e3;
+    text-decoration: none;
+}
+#sources_link:hover {
+    color: #cc25c6;
+    text-decoration: none;
 }

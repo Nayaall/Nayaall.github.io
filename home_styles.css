@@ -91,14 +91,14 @@
 }
 
 /* || GAMES GRID */
-#games_grid{
+#games_grid {
     display: flex;
     justify-content: space-around;
     background-color: rgba(34,34,34,255);
     max-width: 60%;
     margin: 75 auto;
 }
-.grid_borders{
+.grid_borders {
   --angle: 0deg;
   display: inline-block;
   overflow: hidden;
@@ -112,28 +112,12 @@
   border-collapse: separate; 
   animation: 20s borderspin linear infinite;  
 }
-.grid_images{
+.grid_images {
   display: inline-block;
   width: 100%;
   margin: auto;
   border-radius: 50px;
   border-collapse: separate; 
-}
-/* || FOOTER */
-footer{
-    width: 100%;
-    background-color: #333;
-    height: 150px;
-}
-.footerh2{
-    color: white;
-    font-family: MomcakeThin;
-    font-size: 24px;
-}
-.footerp{
-    color: white;
-    font-family: FuturaPtBook;
-    font-size: 15px;
 }
 @keyframes borderspin {
   to {
