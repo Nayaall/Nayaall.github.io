@@ -20,6 +20,18 @@ function scrollFunction() {
     document.getElementById("navbar").style.backgroundColor='#333';
   }
 }
+function mute(){
+    var audio = document.getElementById('audio').src;
+    var home_theme = document.getElementById('home_theme')
+    if (audio.indexOf('resources/mute.png')!=-1) {
+            home_theme.play()
+            document.getElementById('audio').src  = 'resources/volume.png';
+        }
+    else {
+           home_theme.pause()
+           document.getElementById('audio').src = 'resources/mute.png';
+       }
+}
 var myVar;
 function slotsmusic() {
     var audio = document.getElementById('audio').src;
