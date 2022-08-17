@@ -1,0 +1,49 @@
+<DOCTYPE html>
+<html>
+<head>
+<link rel="shortcut icon" href="/resources/favicon_fullsize.ico" type=”image/x-icon”>
+<link rel="stylesheet" href="/home_styles.css">
+<link rel="stylesheet" href="/general_styles.css">
+<script src="home_scripts.js"></script>
+<title>NC Home</title>
+</head>
+<body>
+<nav>
+    <ul id="navbar" class="navbar" onmouseover = "greybg(this)" onmouseout = "blackbg(this)">
+      <li class="navlink_logo"><a href="Nayaall.github.io"><img id="logo" src="/resources/ncasino2.png"></a></li>
+      <li class="navlink"><a href="nayaall.github.io/games.html">Games</a></li>
+      <li class="navlink"><a href="nayaall.github.io/About.html">About</a></li>
+      <li class="navlink"><a href="#login">Login</a></li>
+      <li id="music"><img id="audio" onclick="mute()" src="nayaall.github.io/resources/mute.png"><audio  id="home_theme" loop><source src="home_theme.mp3" type="audio/mpeg"></audio></li>
+      <li id="navsafety"><a href="https://www.begambleaware.org/">Safer Gambling</a></li>
+      <!-- joke idea, maybe implement later -->
+      <!--<li id="navsafety"><a href="Payments.html">Payment Plans</a></li> -->
+    </ul>
+</nav>
+<h2 class="h2" style="margin-top: 70px;">Our Games</h2>
+<!--games grid -->
+<div id="games_grid" style="margin-top: 0;">
+    <div class="grid_borders">
+        <a href="Slots.html"><img class="grid_images" id="slots_grid_image" onmouseover = "gridzoom(this)" onmouseout = "gridzoomout(this)" src="/resources/slots_promotional.png"></a>
+    </div>
+    <div class="grid_borders">
+        <a href="Lucky_Wheel.html"><img class="grid_images" id="wheel_grid_image" onmouseover = "gridzoom(this)" onmouseout = "gridzoomout(this)" src="/resources/gold_wheel_promotional.png"></a>
+    </div>
+    <div class="grid_borders">
+        <a href="Roulette.html"><img class="grid_images" id="roulette_grid_image" onmouseover = "gridzoom(this)" onmouseout = "gridzoomout(this)" src="/resources/roulette_wheel_promotional.png"></a>
+    </div>
+</div>
+</body>
+<footer>
+<div id="gambling_resources">
+    <a href="https://www.begambleaware.org"><img class="help_link_images" src="/resources/begambleawareorg_white_png.png"></a>
+    <a href="https://www.gamblingcommission.gov.uk/"><img class="help_link_images" src="/resources/gambling-commission-logo.png"></a>
+    <a href="https://www.gamstop.co.uk/"><img class="help_link_images" src="/resources/gamstop-logo.png"></a>
+    <a href="https://www.gamcare.org.uk/"><img class="help_link_images" src="/resources/GamCareHelplineLogo.png"></a>
+    <a href="https://www.gamblingtherapy.org/?ReferrerID=102"><img class="help_link_images" src="/resources/GordonMoody-GT.png"></a>
+</div>
+<div id="footer_info">
+    <p class="footerp">Some elements on this site were taken from various sources which you can find <a id="sources_link" href="sources.html">here</a> and/or produced using Gimp but fall under personal use</p>
+</div>
+</footer>
+</html>
